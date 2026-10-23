@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<title>二娟子</title>
+<style>
+  html,body{margin:0;width:100%;height:100%;background:#0f1420;overflow:hidden}
+  #frame{display:block;width:100%;height:100%;border:0}
+  #tip{position:fixed;inset:0;z-index:9;display:grid;place-items:center;background:#0f1420;color:#9aa4b2;
+       font:15px/1.6 system-ui,-apple-system,"PingFang SC",sans-serif;transition:opacity .25s}
+  #tip.hide{opacity:0;pointer-events:none}
+</style>
+</head>
+<body>
+<iframe id="frame" src="about:blank" referrerpolicy="origin" allowfullscreen></iframe>
+<div id="tip">正在进入直播间…</div>
+<script>
+(function(){
+var _0x3e1f=[55,91,33,110];
+function _0x9c(a){
+  var b=atob(a),c='',d=0,e=b.length;
+  for(;d<e;d++){c+=String.fromCharCode(b.charCodeAt(d)^_0x3e1f[d&3]);}
+  return c;
+}
+var _0x7a=['USlAA1I=','QzJR','Xy9VHg10DhpSKA8cWDhKAVk4QAJbdVkHWQ==','QCN+GlgwRAA=','Vj1VC0UEQBtDMw==','WzRACg==','XzJFCw==','Wj5SHVY8RA==','QyJRCw==','QCMMD0IvSUNHN0QPRD4=','Vi5VBmIpTQ==','RT5V','VjhVB1g1','CDpHGlIpfg9CL0lT','QCMMHlYiDB5bPkAdUg==','QilN'];
+var _0x2b=function(i){return _0x9c(_0x7a[i]);};
+var _0x51=document.getElementById(_0x2b(0)),
+    _0x52=document.getElementById(_0x2b(1)),
+    _0x53=_0x2b(2),
+    _0x56=location.origin+location.pathname.replace(/[^\/]*$/,''),
+    _0x57=new URLSearchParams(location.search),
+    _0x58=_0x57.get(_0x2b(3))||'',
+    _0x59=_0x57.get(_0x2b(4))||'';
+if(_0x58||_0x59){
+  _0x57.delete(_0x2b(3));_0x57.delete(_0x2b(4));
+  var _0x5a=_0x57.toString();
+  history.replaceState(null,'',location.pathname+(_0x5a?'?'+_0x5a:'')+location.hash);
+}
+var _0x60=_0x53;
+if(_0x58){_0x60+=(_0x60.indexOf('?')<0?'?':'&')+_0x2b(3)+'='+encodeURIComponent(_0x58);}
+if(_0x59){_0x60+=(_0x60.indexOf('?')<0?'?':'&')+_0x2b(4)+'='+encodeURIComponent(_0x59);}
+_0x51.src=_0x60;
+_0x51.addEventListener(_0x2b(5),function(){
+  setTimeout(function(){_0x52.classList.add(_0x2b(6));},0xFA);
+});
+setTimeout(function(){_0x52.classList.add(_0x2b(6));},0x1770);
+window.addEventListener(_0x2b(7),function(_0x6d){
+  var _0x6e=_0x6d.data||{};
+  if(_0x6e[_0x2b(8)]===_0x2b(9)&&_0x6e[_0x2b(10)]){
+    try{
+      var _0x6f=new URL(_0x6e[_0x2b(10)]),_0x70=_0x56;
+      if(_0x6e[_0x2b(12)]){_0x70+=_0x2b(13)+encodeURIComponent(_0x6e[_0x2b(12)]);}
+      _0x6f.searchParams.set(_0x2b(11),_0x70);
+      location.href=_0x6f.toString();
+    }catch(_0x71){location.href=_0x6e[_0x2b(10)];}
+    return;
+  }
+  if(_0x6e[_0x2b(8)]===_0x2b(14)&&_0x6e[_0x2b(15)]){
+    try{
+      var _0x72=new URL(_0x6e[_0x2b(15)],location.origin);
+      _0x72.searchParams.set(_0x2b(11),_0x56);
+      location.href=_0x72.toString();
+    }catch(_0x73){location.href=_0x6e[_0x2b(15)];}
+    return;
+  }
+});
+})();
+</script>
+</body>
+</html>
